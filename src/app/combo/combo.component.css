@@ -1,0 +1,16 @@
+.animal
+{
+    border-style: solid;
+    border-color: #259e8a;
+    padding: 51px;
+    border-radius: 105px;
+}
+.left
+{
+    float: left;
+}
+
+.right
+{
+    float:right;
+}

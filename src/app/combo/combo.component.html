@@ -1,0 +1,20 @@
+
+     <form>
+    
+      <div class="animal " *ngFor=" let oppo of combine ;let i=index" >
+        <div > <h3>{{i}}</h3>
+    <span class="left ">  <label >PREDESSOR: </label> {{oppo.predecessor}}</span>
+    <span class="right  ">  <label >SUCCESSOR: </label> {{oppo.successor}}</span>
+   
+    <br>
+    <input    class="  form-inline" type="text" #successor value="{{oppo.successor}}" (change)="toupdate(successor.value,i)">
+    <div *ngIf="!flag[i]"><div class="alert alert-danger">MESSAGE:{{message}}</div></div>  
+
+  </div>
+    
+    </div>
+    <button class="btn btn-primary" (click)="toupdatemain(successor)">UPDATE</button>
+ 
+    
+  </form>
+
